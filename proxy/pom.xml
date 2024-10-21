@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>cda-plugin</artifactId>
-    <groupId>pentaho</groupId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen</groupId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>cda-proxy-impl</artifactId>
-  <version>10.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0-SNAPSHOT</version>
   <licenses>
     <license>
       <name>Mozilla Public License, Version 2.0</name>
@@ -23,7 +23,7 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cpf-core</artifactId>
     </dependency>
     <dependency>

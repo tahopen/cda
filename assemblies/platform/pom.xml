@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>pentaho</groupId>
+    <groupId>org.tahopen</groupId>
     <artifactId>cda-plugin-assemblies</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>cda-plugin-assemblies-platform</artifactId>
@@ -17,30 +17,30 @@
     <module>cda-samples</module>
   </modules>
   <properties>
-    <pentaho-json.version>10.1.0.0-SNAPSHOT</pentaho-json.version>
+    <pentaho-json.version>0.1.0.0-SNAPSHOT</pentaho-json.version>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cda-core</artifactId>
       <version>${project.version}</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>cda-pentaho</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>cda-tahopen</artifactId>
       <version>${project.version}</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cpf-core</artifactId>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>cpf-pentaho</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>cpf-tahopen</artifactId>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -49,7 +49,7 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>json</artifactId>
       <version>${pentaho-json.version}</version>
       <scope>runtime</scope>
@@ -60,7 +60,7 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
+      <groupId>org.tahopen.di.plugins</groupId>
       <artifactId>excel-plugins-core</artifactId>
       <version>${project.version}</version>
       <scope>runtime</scope>

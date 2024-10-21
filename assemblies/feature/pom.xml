@@ -6,79 +6,79 @@
 
     <parent>
         <artifactId>cda-plugin-assemblies</artifactId>
-        <groupId>pentaho</groupId>
-        <version>10.1.0.0-SNAPSHOT</version>
+        <groupId>org.tahopen</groupId>
+        <version>0.1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>pentaho-cda</artifactId>
+    <artifactId>tahopen-cda</artifactId>
     <packaging>kar</packaging>
 
     <properties>
-        <pdi-dataservice-client-plugin.version>10.1.0.0-SNAPSHOT</pdi-dataservice-client-plugin.version>
-        <pdi-dataservice-plugin.version>10.1.0.0-SNAPSHOT</pdi-dataservice-plugin.version>
-        <pentaho-osgi-bundles.version>10.1.0.0-SNAPSHOT</pentaho-osgi-bundles.version>
+        <pdi-dataservice-client-plugin.version>0.1.0.0-SNAPSHOT</pdi-dataservice-client-plugin.version>
+        <pdi-dataservice-plugin.version>0.1.0.0-SNAPSHOT</pdi-dataservice-plugin.version>
+        <pentaho-osgi-bundles.version>0.1.0.0-SNAPSHOT</pentaho-osgi-bundles.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <!--    REPORTING    -->
             <dependency>
-                <groupId>org.pentaho.reporting.engine</groupId>
+                <groupId>org.tahopen.reporting.engine</groupId>
                 <artifactId>classic-core</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.engine</groupId>
+                <groupId>org.tahopen.reporting.engine</groupId>
                 <artifactId>classic-extensions-kettle</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.engine</groupId>
+                <groupId>org.tahopen.reporting.engine</groupId>
                 <artifactId>classic-extensions-mondrian</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.engine</groupId>
+                <groupId>org.tahopen.reporting.engine</groupId>
                 <artifactId>classic-extensions-olap4j</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.engine</groupId>
+                <groupId>org.tahopen.reporting.engine</groupId>
                 <artifactId>classic-extensions-pmd</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.engine</groupId>
+                <groupId>org.tahopen.reporting.engine</groupId>
                 <artifactId>classic-extensions-scripting</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.engine</groupId>
+                <groupId>org.tahopen.reporting.engine</groupId>
                 <artifactId>classic-extensions-xpath</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
 
             <dependency>
-                <groupId>org.pentaho.reporting.library</groupId>
+                <groupId>org.tahopen.reporting.library</groupId>
                 <artifactId>libloader</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.library</groupId>
+                <groupId>org.tahopen.reporting.library</groupId>
                 <artifactId>libbase</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho.reporting.library</groupId>
+                <groupId>org.tahopen.reporting.library</groupId>
                 <artifactId>libformula</artifactId>
                 <version>${pentaho-reporting.version}</version>
                 <scope>provided</scope>
@@ -86,27 +86,27 @@
 
             <!-- Kettle -->
             <dependency>
-                <groupId>pentaho-kettle</groupId>
+                <groupId>tahopen-kettle</groupId>
                 <artifactId>kettle-core</artifactId>
                 <version>${pdi.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>pentaho-kettle</groupId>
+                <groupId>tahopen-kettle</groupId>
                 <artifactId>kettle-engine</artifactId>
                 <version>${pdi.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.pentaho</groupId>
-                <artifactId>pentaho-metadata</artifactId>
+                <groupId>org.tahopen</groupId>
+                <artifactId>tahopen-metadata</artifactId>
                 <version>${pentaho-metadata.version}</version>
                 <scope>provided</scope>
             </dependency>
 
             <dependency>
-                <groupId>pentaho</groupId>
-                <artifactId>mondrian</artifactId>
+                <groupId>org.tahopen</groupId>
+                <artifactId>drianmon</artifactId>
                 <version>${mondrian.version}</version>
                 <scope>provided</scope>
             </dependency>
@@ -117,16 +117,16 @@
     <dependencies>
         <!-- Features -->
         <dependency>
-            <groupId>org.pentaho.ctools</groupId>
-            <artifactId>pentaho-cpf-rca</artifactId>
+            <groupId>org.tahopen.ctools</groupId>
+            <artifactId>tahopen-cpf-rca</artifactId>
             <version>${pentaho-cpf-plugin.version}</version>
             <type>xml</type>
             <classifier>features</classifier>
         </dependency>
 
         <dependency>
-            <groupId>pentaho</groupId>
-            <artifactId>pentaho-dataservice</artifactId>
+            <groupId>org.tahopen</groupId>
+            <artifactId>tahopen-dataservice</artifactId>
             <version>${pdi-dataservice-plugin.version}</version>
             <type>xml</type>
             <classifier>features</classifier>
@@ -137,8 +137,8 @@
              included in this feature. We're adding the pentaho-dataservice-client feature here
              explicitly to prevent that. -->
         <dependency>
-            <groupId>pentaho</groupId>
-            <artifactId>pentaho-dataservice-client</artifactId>
+            <groupId>org.tahopen</groupId>
+            <artifactId>tahopen-dataservice-client</artifactId>
             <version>${pdi-dataservice-client-plugin.version}</version>
             <type>xml</type>
             <classifier>features</classifier>
@@ -147,17 +147,17 @@
 
         <!-- Bundles -->
         <dependency>
-            <groupId>pentaho</groupId>
+            <groupId>org.tahopen</groupId>
             <artifactId>cda-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.pentaho.ctools</groupId>
+            <groupId>org.tahopen.ctools</groupId>
             <artifactId>cda-osgi-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.pentaho.di.plugins</groupId>
+            <groupId>org.tahopen.di.plugins</groupId>
             <artifactId>repository-proxy</artifactId>
         </dependency>
 
@@ -166,8 +166,8 @@
              Hammer in pentaho-modeler but do not handle its transitives properly
              TODO: handle transitives properly. Probably we should have a pentaho-modeler feature -->
         <dependency>
-            <groupId>pentaho</groupId>
-            <artifactId>pentaho-modeler</artifactId>
+            <groupId>org.tahopen</groupId>
+            <artifactId>tahopen-modeler</artifactId>
             <version>${pdi.version}</version>
             <exclusions>
                 <exclusion>

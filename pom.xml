@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.pentaho</groupId>
-    <artifactId>pentaho-ce-bundle-parent-pom</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen</groupId>
+    <artifactId>tahopen-ce-bundle-parent-pom</artifactId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>pentaho</groupId>
+  <groupId>org.tahopen</groupId>
   <artifactId>cda-plugin</artifactId>
 
   <packaging>pom</packaging>
@@ -25,6 +25,7 @@
     <module>assemblies</module>
     <module>proxy</module>
   </modules>
+  <!--
   <scm>
     <connection>scm:git:git@github.com:webdetails/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:webdetails/${project.artifactId}.git</developerConnection>
@@ -37,24 +38,25 @@
       <url>dav:${site.publish.url}/${project.groupId}/cda-plugin-${project.version}</url>
     </site>
   </distributionManagement>
+-->
   <properties>
     <marketplace.metadata.sequential.build.id>${sequential.build.id}</marketplace.metadata.sequential.build.id>
     <sequential.build.id>manual-${maven.build.timestamp}</sequential.build.id>
-    <pentaho-metadata.version>10.1.0.0-SNAPSHOT</pentaho-metadata.version>
+    <pentaho-metadata.version>0.1.0.0-SNAPSHOT</pentaho-metadata.version>
     <marketplace.metadata.package_url></marketplace.metadata.package_url>
     <marketplace.metadata.description></marketplace.metadata.description>
     <project.stage>master</project.stage>
     <dependency.mockito-all.revision>1.9.5</dependency.mockito-all.revision>
     <marketplace.metadata.min_parent_version>1.0</marketplace.metadata.min_parent_version>
     <maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
-    <pentaho-reporting.version>10.1.0.0-SNAPSHOT</pentaho-reporting.version>
-    <pdi-dataservice-client-plugin.version>10.1.0.0-SNAPSHOT</pdi-dataservice-client-plugin.version>
-    <pdi-dataservice-plugin.version>10.1.0.0-SNAPSHOT</pdi-dataservice-plugin.version>
-    <pdi.version>10.1.0.0-SNAPSHOT</pdi.version>
-    <pentaho-cpf-plugin.version>10.1.0.0-SNAPSHOT</pentaho-cpf-plugin.version>
-    <pentaho-json.version>10.1.0.0-SNAPSHOT</pentaho-json.version>
-    <pentaho-karaf.version>10.1.0.0-SNAPSHOT</pentaho-karaf.version>
-    <mondrian.version>10.1.0.0-SNAPSHOT</mondrian.version>
+    <pentaho-reporting.version>0.1.0.0-SNAPSHOT</pentaho-reporting.version>
+    <pdi-dataservice-client-plugin.version>0.1.0.0-SNAPSHOT</pdi-dataservice-client-plugin.version>
+    <pdi-dataservice-plugin.version>0.1.0.0-SNAPSHOT</pdi-dataservice-plugin.version>
+    <pdi.version>0.1.0.0-SNAPSHOT</pdi.version>
+    <pentaho-cpf-plugin.version>0.1.0.0-SNAPSHOT</pentaho-cpf-plugin.version>
+    <pentaho-json.version>0.1.0.0-SNAPSHOT</pentaho-json.version>
+    <pentaho-karaf.version>0.1.0.0-SNAPSHOT</pentaho-karaf.version>
+    <mondrian.version>0.1.0.0-SNAPSHOT</mondrian.version>
     <marketplace.metadata.development_stage.phase>2</marketplace.metadata.development_stage.phase>
     <marketplace.metadata.samples_url>http://nexus.pentaho.org/content/groups/omni/pentaho/cda-samples/6.0.0.0-353/cda-samples-6.0.0.0-353.zip</marketplace.metadata.samples_url>
     <dependency.jericho-html.revision>3.1</dependency.jericho-html.revision>
@@ -65,7 +67,7 @@
     <reactivestreams.version>1.0.2</reactivestreams.version>
     <javax.servlet-api>3.0.1</javax.servlet-api>
     <commons-collections.version>3.2.2</commons-collections.version>
-    <metastore.version>10.1.0.0-SNAPSHOT</metastore.version>
+    <metastore.version>0.1.0.0-SNAPSHOT</metastore.version>
     <javax.ws.rs-api.version>2.0</javax.ws.rs-api.version>
     <websocket-api.version>1.0</websocket-api.version>
     <eigenbase-properties.version>1.1.2</eigenbase-properties.version>
@@ -75,13 +77,13 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>cpf-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>cpf-pentaho</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>cpf-tahopen</artifactId>
         <version>${project.version}</version>
         <exclusions>
           <exclusion>
@@ -91,77 +93,77 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>metastore</artifactId>
         <version>${metastore.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-core</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-kettle</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-mondrian</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-olap4j</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-pmd</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-reportdesigner-parser</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-sampledata</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-scripting</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-xpath</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>legacy-functions</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>wizard-core</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.library</groupId>
+        <groupId>org.tahopen.reporting.library</groupId>
         <artifactId>libbase</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>pentaho-kettle</groupId>
+        <groupId>tahopen-kettle</groupId>
         <artifactId>kettle-core</artifactId>
         <version>${pdi.version}</version>
         <exclusions>
@@ -172,7 +174,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho-kettle</groupId>
+        <groupId>tahopen-kettle</groupId>
         <artifactId>kettle-engine</artifactId>
         <version>${pdi.version}</version>
         <exclusions>
@@ -183,8 +185,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
-        <artifactId>pentaho-metadata</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-metadata</artifactId>
         <version>${pentaho-metadata.version}</version>
         <exclusions>
           <exclusion>
@@ -194,8 +196,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>mondrian</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>drianmon</artifactId>
         <version>${mondrian.version}</version>
         <exclusions>
           <exclusion>
@@ -205,24 +207,24 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.di.plugins</groupId>
+        <groupId>org.tahopen.di.plugins</groupId>
         <artifactId>repository-proxy</artifactId>
         <version>${pdi.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.di.plugins</groupId>
+        <groupId>org.tahopen.di.plugins</groupId>
         <artifactId>excel-plugins-core</artifactId>
         <version>${pdi.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pdi-dataservice-client-plugin-api</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tdi-dataservice-client-plugin-api</artifactId>
         <version>${pdi-dataservice-client-plugin.version}</version>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pdi-dataservice-client-plugin</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tdi-dataservice-client-plugin</artifactId>
         <version>${pdi-dataservice-client-plugin.version}</version>
       </dependency>
       <dependency>
@@ -231,18 +233,18 @@
         <version>${dependency.hazelcast.revision}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.library</groupId>
+        <groupId>org.tahopen.reporting.library</groupId>
         <artifactId>libloader</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.library</groupId>
+        <groupId>org.tahopen.reporting.library</groupId>
         <artifactId>libformula</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pdi-dataservice-server-plugin</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tdi-dataservice-server-plugin</artifactId>
         <version>${pdi-dataservice-plugin.version}</version>
       </dependency>
       <dependency>
@@ -251,7 +253,7 @@
         <version>${dependency.jericho-html.revision}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>json</artifactId>
         <version>${pentaho-json.version}</version>
       </dependency>
@@ -375,34 +377,10 @@
   </profiles>
 
   <repositories>
-    <repository>
-      <id>pentaho-public</id>
-      <name>Pentaho Public</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>interval:15</updatePolicy>
-      </snapshots>
-    </repository>
   </repositories>
 
   <pluginRepositories>
-    <pluginRepository>
-      <id>pentaho-public-plugins</id>
-      <name>Pentaho Public Plugins</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
+  
   </pluginRepositories>
-
 
 </project>

@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>pentaho</groupId>
+    <groupId>org.tahopen</groupId>
     <artifactId>cda-plugin</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>cda-core</artifactId>
@@ -29,92 +29,92 @@
     <dependency.jxl.revision>2.6.12</dependency.jxl.revision>
     <dependency.jsr311-api.revision>1.1-ea</dependency.jsr311-api.revision>
     <owasp.encoder.version>1.2</owasp.encoder.version>
-    <encryption-support.version>10.1.0.0-SNAPSHOT</encryption-support.version>
+    <encryption-support.version>9.4.0.0-SNAPSHOT</encryption-support.version>
 
   </properties>
   <dependencies>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cpf-core</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>mondrian</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>drianmon</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-core</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-extensions-kettle</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-extensions-mondrian</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-extensions-olap4j</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-extensions-pmd</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-extensions-scripting</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-extensions-xpath</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libloader</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>json</artifactId>
       <scope>provided</scope>
     </dependency>
     <!-- TODO: It appears that we're only depending from libbase because of StringUtils.isEmpty( string )
          We probably can remove this dependency with a small refactor. -->
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libbase</artifactId>
       <version>${pentaho-reporting.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libformula</artifactId>
       <version>${pentaho-reporting.version}</version>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pdi-dataservice-client-plugin-api</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tdi-dataservice-client-plugin-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>metastore</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho-kettle</groupId>
+      <groupId>tahopen-kettle</groupId>
       <artifactId>kettle-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho-kettle</groupId>
+      <groupId>tahopen-kettle</groupId>
       <artifactId>kettle-engine</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
+      <groupId>org.tahopen.di.plugins</groupId>
       <artifactId>excel-plugins-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
-      <artifactId>pentaho-metadata</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-metadata</artifactId>
     </dependency>
     <dependency>
       <groupId>commons-io</groupId>
@@ -238,7 +238,7 @@
 
     <!-- TEST -->
     <dependency>
-      <groupId>pentaho-kettle</groupId>
+      <groupId>tahopen-kettle</groupId>
       <artifactId>kettle-core</artifactId>
       <version>${project.version}</version>
       <classifier>tests</classifier>
@@ -295,37 +295,37 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libserializer</artifactId>
       <version>${pentaho-reporting.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libfonts</artifactId>
       <version>${pentaho-reporting.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libformat</artifactId>
       <version>${pentaho-reporting.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libdocbundle</artifactId>
       <version>${pentaho-reporting.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libxml</artifactId>
       <version>${pentaho-reporting.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>librepository</artifactId>
       <version>${pentaho-reporting.version}</version>
       <scope>test</scope>

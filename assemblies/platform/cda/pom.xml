@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>pentaho</groupId>
+    <groupId>org.tahopen</groupId>
     <artifactId>cda-plugin-assemblies-platform</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>cda</artifactId>

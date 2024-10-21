@@ -6,11 +6,11 @@
 
   <parent>
     <artifactId>cda-plugin</artifactId>
-    <groupId>pentaho</groupId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen</groupId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.pentaho.ctools</groupId>
+  <groupId>org.tahopen.ctools</groupId>
   <artifactId>cda-osgi-impl</artifactId>
   <packaging>bundle</packaging>
 
@@ -20,56 +20,56 @@
 
   <dependencies>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cda-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pdi-dataservice-client-plugin</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tdi-dataservice-client-plugin</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cpf-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho-kettle</groupId>
+      <groupId>tahopen-kettle</groupId>
       <artifactId>kettle-engine</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho-kettle</groupId>
+      <groupId>tahopen-kettle</groupId>
       <artifactId>kettle-core</artifactId>
     </dependency>
 
     <!-- Used in Blueprint -->
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libformula</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pdi-dataservice-server-plugin</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tdi-dataservice-server-plugin</artifactId>
     </dependency>
     <!-- -->
 
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libbase</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.library</groupId>
+      <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libloader</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.reporting.engine</groupId>
+      <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pdi-dataservice-client-plugin-api</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tdi-dataservice-client-plugin-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>metastore</artifactId>
     </dependency>
     <dependency>

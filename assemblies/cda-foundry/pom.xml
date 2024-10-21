@@ -3,25 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>pentaho</groupId>
+    <groupId>org.tahopen</groupId>
     <artifactId>cda-plugin-assemblies</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>cda-foundry</artifactId>
   <packaging>pom</packaging>
 
   <properties>
-    <pdi-pur-plugin.version>10.1.0.0-SNAPSHOT</pdi-pur-plugin.version>
-    <pentaho-osgi-bundles.version>10.1.0.0-SNAPSHOT</pentaho-osgi-bundles.version>
-    <pdi-plugins-ee.version>10.1.0.0-SNAPSHOT</pdi-plugins-ee.version>
+    <pdi-pur-plugin.version>0.1.0.0-SNAPSHOT</pdi-pur-plugin.version>
+    <pentaho-osgi-bundles.version>0.1.0.0-SNAPSHOT</pentaho-osgi-bundles.version>
+    <pdi-plugins-ee.version>0.1.0.0-SNAPSHOT</pdi-plugins-ee.version>
     <camel.karaf.version>2.17.7</camel.karaf.version>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>com.pentaho.di</groupId>
-      <artifactId>pdi-core-ee</artifactId>
+      <groupId>com.tahopen.di</groupId>
+      <artifactId>tdi-core-ee</artifactId>
       <version>${pdi.version}</version>
       <type>zip</type>
       <exclusions>
@@ -34,23 +34,23 @@
 
     <!-- region used in the karaf assembly descriptors -->
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-cda</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-cda</artifactId>
       <version>${project.version}</version>
       <type>xml</type>
       <classifier>features</classifier>
     </dependency>
 
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-karaf-features</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-karaf-features</artifactId>
       <version>${pentaho-karaf.version}</version>
       <type>xml</type>
       <classifier>standard</classifier>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.karaf</groupId>
-      <artifactId>pentaho-karaf-overrides</artifactId>
+      <groupId>org.tahopen.karaf</groupId>
+      <artifactId>tahopen-karaf-overrides</artifactId>
       <version>${pentaho-karaf.version}</version>
       <type>xml</type>
       <classifier>features</classifier>
@@ -80,8 +80,8 @@
     <!-- endregion -->
 
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
-      <artifactId>pdi-pur-plugin</artifactId>
+      <groupId>org.tahopen.di.plugins</groupId>
+      <artifactId>tdi-pur-plugin</artifactId>
       <version>${pdi-pur-plugin.version}</version>
       <type>zip</type>
     </dependency>
