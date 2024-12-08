@@ -15,7 +15,8 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jetty.version>8.1.15.v20140411</jetty.version>
+<!--   <jetty.version>8.1.15.v20140411</jetty.version> -->
+   <jetty.version>9.0.0.v20130308</jetty.version>
   </properties>
 
   <dependencies>
@@ -82,7 +83,8 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-websocket</artifactId>
-      <version>${jetty.version}</version>
+    <!--  <version>${jetty.version}</version> -->
+      <version>9.0.0.v20130308</version>
     </dependency>
 
     <dependency>
