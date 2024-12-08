@@ -109,7 +109,7 @@
     </dependency>
     <dependency>
       <groupId>org.tahopen.reporting.engine</groupId>
-      <artifactId>classic-extensions-mondrian</artifactId>
+      <artifactId>classic-extensions-drianmon</artifactId>
       <version>${pentaho-report-wizard-core.version}</version>
     </dependency>
     <dependency>

@@ -25,20 +25,6 @@
     <module>assemblies</module>
     <module>proxy</module>
   </modules>
-  <!--
-  <scm>
-    <connection>scm:git:git@github.com:webdetails/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:git@github.com:webdetails/${project.artifactId}.git</developerConnection>
-    <url>scm:git:git@github.com:webdetails/${project.artifactId}.git</url>
-  </scm>
-  <distributionManagement>
-    <site>
-      <id>pentaho.public.snapshot.repo</id>
-      <name>${project.artifactId}-${project.version}</name>
-      <url>dav:${site.publish.url}/${project.groupId}/cda-plugin-${project.version}</url>
-    </site>
-  </distributionManagement>
--->
   <properties>
     <marketplace.metadata.sequential.build.id>${sequential.build.id}</marketplace.metadata.sequential.build.id>
     <sequential.build.id>manual-${maven.build.timestamp}</sequential.build.id>
@@ -114,7 +100,7 @@
       </dependency>
       <dependency>
         <groupId>org.tahopen.reporting.engine</groupId>
-        <artifactId>classic-extensions-mondrian</artifactId>
+        <artifactId>classic-extensions-drianmon</artifactId>
         <version>${pentaho-reporting.version}</version>
       </dependency>
       <dependency>

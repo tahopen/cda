@@ -50,8 +50,6 @@
       <groupId>org.tahopen</groupId>
       <artifactId>tdi-dataservice-server-plugin</artifactId>
     </dependency>
-    <!-- -->
-
     <dependency>
       <groupId>org.tahopen.reporting.library</groupId>
       <artifactId>libbase</artifactId>
