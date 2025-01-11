@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.tahopen</groupId>
     <artifactId>cda-plugin</artifactId>
-    <version>0.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0</version>
   </parent>
 
   <artifactId>cda-core</artifactId>
@@ -165,8 +165,8 @@
       <artifactId>xml-apis</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
-      <artifactId>pentaho-encryption-support</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-encryption-support</artifactId>
       <version>${encryption-support.version}</version>
       <scope>provided</scope>
     </dependency>
