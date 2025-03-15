@@ -17,6 +17,7 @@
       <url>http://www.mozilla.org/MPL/2.0/index.txt</url>
     </license>
   </licenses>
+  
   <properties>
     <dependency.poi.revision>3.12</dependency.poi.revision>
     <dependency.commons-io.revision>2.1</dependency.commons-io.revision>
@@ -29,7 +30,7 @@
     <dependency.jxl.revision>2.6.12</dependency.jxl.revision>
     <dependency.jsr311-api.revision>1.1-ea</dependency.jsr311-api.revision>
     <owasp.encoder.version>1.2</owasp.encoder.version>
-    <encryption-support.version>9.4.0.0-SNAPSHOT</encryption-support.version>
+    <encryption-support.version>0.1.0.0</encryption-support.version>
 
   </properties>
   <dependencies>
@@ -54,7 +55,7 @@
     <dependency>
       <groupId>org.tahopen.reporting.engine</groupId>
       <artifactId>classic-extensions-drianmon</artifactId>
-      <version>0.1.0.0-SNAPSHOT</version>    
+      <version>0.1.0.0</version>    
     </dependency>
     <dependency>
       <groupId>org.tahopen.reporting.engine</groupId>
